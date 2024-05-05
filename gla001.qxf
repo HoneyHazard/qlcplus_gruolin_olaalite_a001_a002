@@ -99,9 +99,85 @@
         <Capability Min="1" Max="255">Change a color every point</Capability>
     </Channel>
 
+    <Channel Name="Color Change">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="7">Primary color</Capability>
+        <Capability Min="8" Max="15" Color="#FF0000">Red</Capability>
+        <Capability Min="16" Max="23" Color="#FFFF00">Yellow</Capability>
+        <Capability Min="24" Max="31" Color="#00FF00">Green</Capability>
+        <Capability Min="32" Max="39" Color="#4B0082">Indigo</Capability>
+        <Capability Min="40" Max="47" Color="#0000FF">Blue</Capability>
+        <Capability Min="48" Max="55" Color="#FF00FF">Pink</Capability>
+        <Capability Min="56" Max="63" Color="#FFFFFF">White</Capability>
+        <Capability Min="64" Max="95">Reg, green, and blue color change of the whole picture</Capability> </Capability>
+        <Capability Min="96" Max="127">Yellow, indigo and pink color change of the whole picture</Capability>
+        <Capability Min="128" Max="159">Colorful color change of the whole picture</Capability>
+        <Capability Min="160" Max="191">Colorful color change</Capability>
+        <Capability Min="192" Max="223">Revolving horses color</Capability>
+        <Capability Min="224" Max="255">Reverse revolving rings color</Capability>
+    </Channel>
 
+    <Channel Name="Node Highlighting">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="63">Node is getting brighter and brighter</Capability>
+        <Capability Min="64" Max="127">Display broken pen</Capability>
+        <Capability Min="128" Max="159">Display retrace string</Capability>
+        <Capability Min="224" Max="255">Reserve</Capability>
+    </Channel>
 
+    <Channel Name="Node Expansion">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="255">Expansion points (when CH15<=127)</Capability>
+        <Capability Min="0" Max="255">Delay after full expansion (when CH15>=127)</Capability>
+    </Channel>
     
+    <Channel Name="Gradient">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="63">Forward manual expansion (Must be used with CH31, the expansion amount is determined by CH31)</Capability>
+        <Capability Min="64" Max="127">Reverse manual expansion (Must be used with CH31, the expansion amount is determined by CH31)</Capability>
+        <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
+        <Capability Min="160" Max="191">Dynamic gradient effect B</Capability>
+        <Capability Min="192" Max="223">Dynamic fade effect C</Capability>
+        <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
+    </Channel>
+
+    <Channel Name="Degree Of Distortion">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects (Applicable for CH24, CH25, CH26, CH27)</Capability>
+    </Channel>
+
+    <Channel Name="Filter Selection">
+        <Group Byte="0">Beam</Group>
+        <Capability Min="0" Max="19">Pattern size</Capability>
+        <Capability Min="20" Max="255">Reserve</Capability>
+    </Channel>
+
+    <Channel Name="The Second Pattern Switch">
+        <Group Byte="0">Beam</Group>
+        TODODODODO
+    </Channel>
+
+    <Mode Name="34 Channel">
+    <Channel Number="0">Total Switch</Channel>
+    <Channel Number="1">Out of Bounds Mode And Pattern Size</Channel>
+    <Channel Number="2">Animation and Line Gallery Selection</Channel>
+    <Channel Number="3">nimation Pattern and Line Effect Selection"</Channel>
+    <Channel Number="4">Pattern Scaling</Channel>
+    <Channel Number="5">Pattern Rotation</Channel>
+    <Channel Number="6">Horizontal Movement</Channel>
+    <Channel Number="7">Vertical Movement</Channel>
+    <Channel Number="8">Horizontal Zoom</Channel>
+    <Channel Number="9">Vertical Zoom</Channel>
+    <Channel Number="10">Force Tinting</Channel>
+    <Channel Number="11">Color Change</Channel>
+    <Channel Number="12">Node Highlighting</Channel>
+    <Channel Number="13">Node Expansion</Channel>
+    <Channel Number="14">Gradient</Channel>
+    <Channel Number="15">Degree Of Distortion</Channel>
+    <Channel Number="16">Filter Selection</Channel>
+    </Mode>
+
+
     <!-- REFERENCE -->
     <!-- Channel for Dimmer -->
     <Channel Name="Dimmer">
@@ -109,6 +185,7 @@
         <Capability Min="0" Max="129" Preset="IntensityDark">Blackout</Capability>
         <Capability Min="130" Max="255" Preset="IntensityFull">Dimmer</Capability>
     </Channel>
+
     <!-- Channel for Color Change -->
     <Channel Name="Color Change 1">
         <Group Byte="1">Colour</Group>
@@ -242,8 +319,7 @@
     <Mode Name="34 Channel">
   <Channel Number="0">Dimmer</Channel>
   <Channel Number="1">Color Change 1</Channel>
-  <Channel Number="2">Green 1</Chann
-  el>
+  <Channel Number="2">Green 1</Chann  el>
   <Channel Number="3">Blue 1</Channel>
   <Channel Number="4">Red 2</Channel>
   <Channel Number="5">Green 2</Channel>
