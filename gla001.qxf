@@ -10,10 +10,12 @@
     <Model>Gruolin GL-A001: 34 channel mode</Model>
     <Type>Laser</Type>
     
-    
     <!--- SERG!! -->
     
-    <Channel Name="Total Switch">
+    <!--- 34CH MODE: PATTERN CONTROL 1 -->
+
+    <!--- 34CH MODE: CH1 -->
+    <Channel Name="Total Switch 1">
         <Group Byte="0">Maintenance</Group>
         <Capability Min="0" Max="0">Light off</Capability>
         <Capability Min="1" Max="99">Auto run</Capability>
@@ -22,24 +24,28 @@
         <Capability Min="255" Max="255">Light off</Capability>
     </Channel>
 
-    <Channel Name="Out of Bounds Mode and Pattern Size">
+    <!--- 34CH MODE: CH2 -->
+    <Channel Name="Out of Bounds Mode and Pattern Size 1">
         <Group Byte="0">Utility</Group>
         <Capability Min="0" Max="249">Pattern size adjustment and Out of bounds mode</Capability>
         <Capability Min="250" Max="255">Reserve</Capability>
     </Channel>
 
-    <Channel Name="Animation and Line Gallery Selection">
+    <!--- 34CH MODE: CH3 -->
+    <Channel Name="Animation and Line Gallery Selection 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="239">Animation Gallery Switch</Capability>
         <Capability Min="240" Max="255">Line Gallery Switch</Capability>
     </Channel>
 
-    <Channel Name="Animation Pattern and Line Effect Selection">
+    <!--- 34CH MODE: CH4 -->
+    <Channel Name="Animation Pattern and Line Effect Selection 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="255">Animation pattern selection or Line effect selection</Capability>
     </Channel>
 
-    <Channel Name="Pattern Scaling">
+    <!--- 34CH MODE: CH5 -->
+    <Channel Name="Pattern Scaling 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static pattern size</Capability>
         <Capability Min="128" Max="159">Dynamic zoom in</Capability>
@@ -48,7 +54,8 @@
         <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
     </Channel>
 
-    <Channel Name="Pattern Rotation">
+    <!--- 34CH MODE: CH6 -->
+    <Channel Name="Pattern Rotation 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static rotation</Capability>
         <Capability Min="128" Max="159">Dynamic 2 times forward and reverse rotation</Capability>
@@ -57,7 +64,8 @@
         <Capability Min="224" Max="255">Dynamic reverse rotation</Capability>
     </Channel>
 
-    <Channel Name="Horizontal Movement">
+    <!--- 34CH MODE: CH7 -->
+    <Channel Name="Horizontal Movement 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static translation</Capability>
         <Capability Min="128" Max="159">Dynamic push-up waves</Capability>
@@ -66,7 +74,8 @@
         <Capability Min="224" Max="255">Dynamic right shift</Capability>
     </Channel>
 
-    <Channel Name="Vertical Movement">
+    <!--- 34CH MODE: CH8 -->
+    <Channel Name="Vertical Movement 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static vertical shift</Capability>
         <Capability Min="128" Max="159">Dynamic right push waves</Capability>
@@ -75,7 +84,8 @@
         <Capability Min="224" Max="255">Dynamic move up</Capability>
     </Channel>
 
-    <Channel Name="Horizontal Zoom">
+    <!--- 34CH MODE: CH9 -->
+    <Channel Name="Horizontal Zoom 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static size</Capability>
         <Capability Min="128" Max="159">Dynamic push up distortion</Capability>
@@ -84,7 +94,8 @@
         <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
     </Channel>
 
-    <Channel Name="Vertical Zoom">
+    <!--- 34CH MODE: CH10 -->
+    <Channel Name="Vertical Zoom 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="127">Static size</Capability>
         <Capability Min="128" Max="159">Dynamic right push distortion</Capability>
@@ -93,13 +104,15 @@
         <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
     </Channel>
 
-    <Channel Name="Force Tinting">
+    <!--- 34CH MODE: CH11 -->
+    <Channel Name="Force Tinting 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="0">Primary color</Capability>
         <Capability Min="1" Max="255">Change a color every point</Capability>
     </Channel>
 
-    <Channel Name="Color Change">
+    <!--- 34CH MODE: CH12 -->
+    <Channel Name="Color Change 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="7">Primary color</Capability>
         <Capability Min="8" Max="15" Color="#FF0000">Red</Capability>
@@ -117,7 +130,8 @@
         <Capability Min="224" Max="255">Reverse revolving rings color</Capability>
     </Channel>
 
-    <Channel Name="Node Highlighting">
+    <!--- 34CH MODE: CH13 -->
+    <Channel Name="Node Highlighting 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="63">Node is getting brighter and brighter</Capability>
         <Capability Min="64" Max="127">Display broken pen</Capability>
@@ -125,13 +139,15 @@
         <Capability Min="224" Max="255">Reserve</Capability>
     </Channel>
 
-    <Channel Name="Node Expansion">
+    <!--- 34CH MODE: CH14 -->
+    <Channel Name="Node Expansion 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="255">Expansion points (when CH15<=127)</Capability>
         <Capability Min="0" Max="255">Delay after full expansion (when CH15>=127)</Capability>
     </Channel>
     
-    <Channel Name="Gradient">
+    <!--- 34CH MODE: CH15 -->
+    <Channel Name="Gradient 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="63">Forward manual expansion (Must be used with CH31, the expansion amount is determined by CH31)</Capability>
         <Capability Min="64" Max="127">Reverse manual expansion (Must be used with CH31, the expansion amount is determined by CH31)</Capability>
@@ -141,12 +157,14 @@
         <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
     </Channel>
 
-    <Channel Name="Degree Of Distortion">
+    <!--- 34CH MODE: CH16 -->
+    <Channel Name="Degree Of Distortion 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects (Applicable for CH24, CH25, CH26, CH27)</Capability>
     </Channel>
 
-    <Channel Name="Filter Selection">
+    <!--- 34CH MODE: CH17 -->
+    <Channel Name="Filter Selection 1">
         <Group Byte="0">Beam</Group>
         <Capability Min="0" Max="19">Pattern size</Capability>
         <Capability Min="20" Max="255">Reserve</Capability>
@@ -154,7 +172,7 @@
 
     <Channel Name="The Second Pattern Switch">
         <Group Byte="0">Beam</Group>
-        TODODODODO
+        
     </Channel>
 
     <Mode Name="34 Channel">
