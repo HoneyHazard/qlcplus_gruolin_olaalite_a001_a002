@@ -30,6 +30,20 @@
         <Capability Min="0" Max="249">Pattern size adjustment and Out of bounds mode</Capability>
         <Capability Min="250" Max="255">Reserve</Capability>
     </Channel>
+    
+    <!-- 
+    <Channel Name="Animation Gallery">
+        <Group Byte="0">Effect</Group>
+        <Capability Min="0" Max="10">No function</Capability>
+        <Capability Min="11" Max="255">Animation Gallery</Capability>
+    </Channel>
+
+    <Channel Name="Line Gallery">
+        <Group Byte="0">Effect</Group>
+        <Capability Min="0" Max="10">No function</Capability>
+        <Capability Min="11" Max="255">Line Gallery</Capability>
+    </Channel> 
+    -->
 
     <!--- 34CH MODE: CH3 -->
     <Channel Name="Animation and Line Gallery Selection 1">
@@ -139,54 +153,65 @@
         <Capability Min="224" Max="255">Reserve</Capability>
     </Channel>
 
-    <!--- 34CH MODE: MANUAL EXPANSION 1 ("SUB-MODE") -->
+<!-- 
     <Channel Name="Manual Expansion 1">
         <Group Byte="0">Effect</Group>
         <Capability Min="0" Max="10">No function</Capability>
         <Capability Min="11" Max="255">Manual Expansion 1</Capability>
     </Channel>
 
-    <!--- 34CH MODE: DYNAMIC EFFECT 1 ("SUB-MODE") -->
     <Channel Name="Dynamic Effect 1">
         <Group Byte="0">Effect</Group>
         <Capability Min="0" Max="10">No function</Capability>
         <Capability Min="11" Max="255">Dynamic Effect 1</Capability>
-    </Channel>
+    </Channel> -->
 
-    <!--- 34CH MODE: CH14 -->
+    <!--- 34CH MODE: CH14: Different attribute based on CH15 -->
     <Channel Name="Node Expansion 1">
         <Group Byte="0">Beam</Group>
-        <Capability Min="0" Max="255" With="Manual Expansion 1">Expansion points</Capability>
-        <Capability Min="0" Max="255" With="Dynamic Effect 1">Delay after full expansion</Capability>
+        <Capability Min="0" Max="255">Expansion points</Capability>
+        <Capability Min="0" Max="255">Delay after full expansion</Capability>
     </Channel>
     
-    <!--- 34CH MODE: CH15 -->
+    <!--- 34CH MODE: CH15: Effects what CH14 means -->
     <Channel Name="Gradient 1">
         <Group Byte="0">Beam</Group>
-        <Capability Min="0" Max="63" With="Manual Expansion 1">Forward manual expansion</Capability>
-        <Capability Min="64" Max="127" With="Manual Expansion 1">Reverse manual expansion</Capability>
-        <Capability Min="128" Max="159" With="Dynamic Effect 1">Dynamic gradient effect A</Capability>
-        <Capability Min="160" Max="191" With="Dynamic Effect 1">Dynamic gradient effect B</Capability>
-        <Capability Min="192" Max="223" With="Dynamic Effect 1">Dynamic fade effect C</Capability>
-        <Capability Min="224" Max="255" With="Dynamic Effect 1">Dynamic fade effect D</Capability>
+        <Capability Min="0" Max="63">Forward manual expansion</Capability>
+        <Capability Min="64" Max="127">Reverse manual expansion</Capability>
+        <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
+        <Capability Min="160" Max="191">Dynamic gradient effect B</Capability>
+        <Capability Min="192" Max="223">Dynamic fade effect C</Capability>
+        <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
     </Channel>
 
-    <!--- 34CH MODE: CH16 -->
+    <!--- 34CH MODE: CH16: Applicable to CH7, CH8, CH9, CH10 -->
     <Channel Name="Degree Of Distortion 1">
         <Group Byte="0">Beam</Group>
-        <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects (Applicable for CH24, CH25, CH26, CH27)</Capability>
+        <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
     </Channel>
 
     <!--- 34CH MODE: CH17 -->
     <Channel Name="Filter Selection 1">
         <Group Byte="0">Beam</Group>
-        <Capability Min="0" Max="19">Pattern size</Capability>
-        <Capability Min="20" Max="255">Reserve</Capability>
+        <Capability Min="0" Max="19">Filter 1</Capability>
+        <Capability Min="20" Max="39">Filter 2</Capability>
+        <Capability Min="40" Max="59">Filter 3</Capability>
+        <Capability Min="60" Max="79">Filter 4</Capability>
+        <Capability Min="80" Max="99">Filter 5</Capability>
+        <Capability Min="100" Max="119">Filter 6</Capability>
+        <Capability Min="120" Max="139">Filter 7</Capability>
+        <Capability Min="140" Max="159">Filter 8</Capability>
+        <Capability Min="160" Max="179">Filter 9</Capability>
+        <Capability Min="180" Max="199">Filter 10</Capability>
+        <Capability Min="200" Max="219">Filter 11</Capability>
+        <Capability Min="220" Max="239">Filter 12</Capability>
+        <Capability Min="240" Max="255">Filter 13</Capability>
     </Channel>
 
+    <!--- 34CH MODE: CH18 -->
     <Channel Name="The Second Pattern Switch">
         <Group Byte="0">Beam</Group>
-        
+        <Capability Min="0" Max="255">The second pattern switch</Capability>
     </Channel>
 
     <Mode Name="34 Channel">
@@ -207,8 +232,9 @@
     <Channel Number="14">Gradient</Channel>
     <Channel Number="15">Degree Of Distortion</Channel>
     <Channel Number="16">Filter Selection</Channel>
+    <Channel Number="17">Dynamic Effect</Channel>
     </Mode>
-
+<!-- 
 
     <!-- REFERENCE -->
     <!-- Channel for Dimmer -->
@@ -415,7 +441,7 @@
    <Channel>24</Channel>
    <Channel>22</Channel>
   </Head>
- </Mode>
+ </Mode> -->
     
 </FixtureDefinition>
 
