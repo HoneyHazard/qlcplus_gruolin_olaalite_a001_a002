@@ -218,7 +218,7 @@
     <Channel Number="0">Total Switch</Channel>
     <Channel Number="1">Out of Bounds Mode And Pattern Size</Channel>
     <Channel Number="2">Animation and Line Gallery Selection</Channel>
-    <Channel Number="3">nimation Pattern and Line Effect Selection"</Channel>
+    <Channel Number="3">Animation Pattern and Line Effect Selection"</Channel>
     <Channel Number="4">Pattern Scaling</Channel>
     <Channel Number="5">Pattern Rotation</Channel>
     <Channel Number="6">Horizontal Movement</Channel>
