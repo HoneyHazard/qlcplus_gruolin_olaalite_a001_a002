@@ -6,7 +6,19 @@ Currently, only 34-channel (advanced) mode is implemented.
 
 6-channel, simplified mode should also be added.
 
-🚧 *WORK IN PROGRESS*
+🚧 *WORK IN PROGRESS* 🚧
+
+## About the Laser
+
+The laser basically allows two (almost) independent images to be projected.
+
+### Amazon Link
+
+https://www.amazon.com/Gruolin-Animation-Activated-Perefct-Lighting/dp/B09ZY8Z96T/
+
+### User Manual PDF
+
+https://m.media-amazon.com/images/I/B1WQMfSwivL.pdf
 
 ## Installation
 
@@ -43,7 +55,9 @@ Copy `gla001.qxf` to:
 
 # Further Plans
 
-If further polished, this could be uplodaded/converted to become part of Open Fixture Library:
+6CH simplified mode should implemented.
+
+Then, if further polished, this could be uplodaded/converted to become part of Open Fixture Library:
 
 https://open-fixture-library.org/fixture-editor
 
