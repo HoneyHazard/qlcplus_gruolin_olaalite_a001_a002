@@ -16,6 +16,14 @@ The laser basically allows two (almost) independent images to be projected.
 
 https://www.amazon.com/Gruolin-Animation-Activated-Perefct-Lighting/dp/B09ZY8Z96T/
 
+### Review
+
+https://happytechfam.online/gruolin-3d-animation-dj-party-laser-light-full-color-review/
+
+### Youtube
+
+https://www.youtube.com/watch?v=fdpWfh7IOrY
+
 ### User Manual PDF
 
 https://m.media-amazon.com/images/I/B1WQMfSwivL.pdf
