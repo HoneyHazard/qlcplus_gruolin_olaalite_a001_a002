@@ -9,6 +9,9 @@
  <Manufacturer>Gruolin</Manufacturer>
  <Model>GL-A001: 34 channel mode</Model>
  <Type>Laser</Type>
+ <Channel Name="No Function 1">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
  <Channel Name="Total Switch 1">
   <Group Byte="0">Maintenance</Group>
   <Capability Min="0" Max="0">Light off</Capability>
@@ -120,10 +123,10 @@
   <Group Byte="0">Beam</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
-  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A</Capability>
-  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B</Capability>
-  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C</Capability>
-  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D</Capability>
+  <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
+  <Capability Min="160" Max="191">Dynamic gradient effect B</Capability>
+  <Capability Min="192" Max="223">Dynamic fade effect C</Capability>
+  <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
  </Channel>
  <Channel Name="Degree Of Distortion 1">
   <Group Byte="0">Beam</Group>
@@ -250,10 +253,10 @@
   <Group Byte="0">Beam</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
-  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A</Capability>
-  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B</Capability>
-  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C</Capability>
-  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D</Capability>
+  <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
+  <Capability Min="160" Max="191">Dynamic gradient effect B</Capability>
+  <Capability Min="192" Max="223">Dynamic fade effect C</Capability>
+  <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
  </Channel>
  <Channel Name="Degree Of Distortion 2">
   <Group Byte="0">Beam</Group>
@@ -276,40 +279,41 @@
   <Capability Min="240" Max="255">Filter 13</Capability>
  </Channel>
  <Mode Name="34CH">
-  <Channel Number="0">Total Switch 1</Channel>
-  <Channel Number="1">Out of Bounds Mode and Pattern Size 1</Channel>
-  <Channel Number="2">Animation and Line Gallery Selection 1</Channel>
-  <Channel Number="3">Animation Pattern and Line Effect Selection 1</Channel>
-  <Channel Number="4">Pattern Scaling 1</Channel>
-  <Channel Number="5">Pattern Rotation 1</Channel>
-  <Channel Number="6">Horizontal Movement 1</Channel>
-  <Channel Number="7">Vertical Movement 1</Channel>
-  <Channel Number="8">Horizontal Zoom 1</Channel>
-  <Channel Number="9">Vertical Zoom 1</Channel>
-  <Channel Number="10">Force Tinting 1</Channel>
-  <Channel Number="11">Color Change 1</Channel>
-  <Channel Number="12">Node Highlighting 1</Channel>
-  <Channel Number="13">Node Expansion 1</Channel>
-  <Channel Number="14" ActsOn="13">Gradient 1</Channel>
-  <Channel Number="15">Degree Of Distortion 1</Channel>
-  <Channel Number="16">Filter Selection 1</Channel>
-  <Channel Number="17">Pattern Switch 2</Channel>
-  <Channel Number="18">Out of Bounds Mode and Pattern Size 2</Channel>
-  <Channel Number="19">No Function 2</Channel>
-  <Channel Number="20">Pattern Selection 2</Channel>
-  <Channel Number="21">Pattern Scaling 2</Channel>
-  <Channel Number="22">Pattern Rotation 2</Channel>
-  <Channel Number="23">Horizontal Movement 2</Channel>
-  <Channel Number="24">Vertical Movement 2</Channel>
-  <Channel Number="25">Horizontal Zoom 2</Channel>
-  <Channel Number="26">Vertical Zoom 2</Channel>
-  <Channel Number="27">Force Tinting 2</Channel>
-  <Channel Number="28">Color Change 2</Channel>
-  <Channel Number="29">Node Highlighting 2</Channel>
-  <Channel Number="30">Node Expansion 2</Channel>
-  <Channel Number="31" ActsOn="30">Gradient 2</Channel>
-  <Channel Number="32">Degree Of Distortion 2</Channel>
-  <Channel Number="33">Filter Selection 2</Channel>
+  <Channel Number="0">No Function 1</Channel>
+  <Channel Number="1">Total Switch 1</Channel>
+  <Channel Number="2">Out of Bounds Mode and Pattern Size 1</Channel>
+  <Channel Number="3">Animation and Line Gallery Selection 1</Channel>
+  <Channel Number="4">Animation Pattern and Line Effect Selection 1</Channel>
+  <Channel Number="5">Pattern Scaling 1</Channel>
+  <Channel Number="6">Pattern Rotation 1</Channel>
+  <Channel Number="7">Horizontal Movement 1</Channel>
+  <Channel Number="8">Vertical Movement 1</Channel>
+  <Channel Number="9">Horizontal Zoom 1</Channel>
+  <Channel Number="10">Vertical Zoom 1</Channel>
+  <Channel Number="11">Force Tinting 1</Channel>
+  <Channel Number="12">Color Change 1</Channel>
+  <Channel Number="13">Node Highlighting 1</Channel>
+  <Channel Number="14">Node Expansion 1</Channel>
+  <Channel Number="15">Gradient 1</Channel>
+  <Channel Number="16">Degree Of Distortion 1</Channel>
+  <Channel Number="17">Filter Selection 1</Channel>
+  <Channel Number="18">Pattern Switch 2</Channel>
+  <Channel Number="19">Out of Bounds Mode and Pattern Size 2</Channel>
+  <Channel Number="20">No Function 2</Channel>
+  <Channel Number="21">Pattern Selection 2</Channel>
+  <Channel Number="22">Pattern Scaling 2</Channel>
+  <Channel Number="23">Pattern Rotation 2</Channel>
+  <Channel Number="24">Horizontal Movement 2</Channel>
+  <Channel Number="25">Vertical Movement 2</Channel>
+  <Channel Number="26">Horizontal Zoom 2</Channel>
+  <Channel Number="27">Vertical Zoom 2</Channel>
+  <Channel Number="28">Force Tinting 2</Channel>
+  <Channel Number="29">Color Change 2</Channel>
+  <Channel Number="30">Node Highlighting 2</Channel>
+  <Channel Number="31">Node Expansion 2</Channel>
+  <Channel Number="32">Gradient 2</Channel>
+  <Channel Number="33">Degree Of Distortion 2</Channel>
+  <Channel Number="34">Filter Selection 2</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
