@@ -120,18 +120,10 @@
   <Group Byte="0">Beam</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
-  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A
-   <Alias Mode="34CH" Channel="Node Expansion 1" With="Delay After Full Expansion 1"/>
-  </Capability>
-  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B
-   <Alias Mode="34CH" Channel="Total Switch 1" With="Delay After Full Expansion 1"/>
-  </Capability>
-  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C
-   <Alias Mode="34CH" Channel="Total Switch 1" With="Delay After Full Expansion 1"/>
-  </Capability>
-  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D
-   <Alias Mode="34CH" Channel="Total Switch 1" With="Delay After Full Expansion 1"/>
-  </Capability>
+  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A</Capability>
+  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B</Capability>
+  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C</Capability>
+  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D</Capability>
  </Channel>
  <Channel Name="Degree Of Distortion 1">
   <Group Byte="0">Beam</Group>
@@ -258,18 +250,10 @@
   <Group Byte="0">Beam</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
-  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A
-   <Alias Mode="34CH" Channel="Node Expansion 2" With="Delay After Full Expansion 2"/>
-  </Capability>
-  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B
-   <Alias Mode="34CH" Channel="Total Switch 2" With="Delay After Full Expansion 2"/>
-  </Capability>
-  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C
-   <Alias Mode="34CH" Channel="Total Switch 2" With="Delay After Full Expansion 2"/>
-  </Capability>
-  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D
-   <Alias Mode="34CH" Channel="Total Switch 2" With="Delay After Full Expansion 2"/>
-  </Capability>
+  <Capability Min="128" Max="159" Preset="Alias">Dynamic gradient effect A</Capability>
+  <Capability Min="160" Max="191" Preset="Alias">Dynamic gradient effect B</Capability>
+  <Capability Min="192" Max="223" Preset="Alias">Dynamic fade effect C</Capability>
+  <Capability Min="224" Max="255" Preset="Alias">Dynamic fade effect D</Capability>
  </Channel>
  <Channel Name="Degree Of Distortion 2">
   <Group Byte="0">Beam</Group>
