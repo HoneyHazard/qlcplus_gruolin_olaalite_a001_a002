@@ -21,21 +21,21 @@
   <Capability Min="255" Max="255">Light off</Capability>
  </Channel>
  <Channel Name="Out of Bounds Mode and Pattern Size 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Shutter</Group>
   <Capability Min="0" Max="249">Pattern size adjustment and Out of bounds mode</Capability>
   <Capability Min="250" Max="255">Reserve</Capability>
  </Channel>
  <Channel Name="Animation and Line Gallery Selection 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="239">Animation Gallery Switch</Capability>
   <Capability Min="240" Max="255">Line Gallery Switch</Capability>
  </Channel>
  <Channel Name="Animation Pattern and Line Effect Selection 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="255">Animation pattern selection or Line effect selection</Capability>
  </Channel>
  <Channel Name="Pattern Scaling 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Prism</Group>
   <Capability Min="0" Max="127">Static pattern size</Capability>
   <Capability Min="128" Max="159">Dynamic zoom in</Capability>
   <Capability Min="160" Max="191">Dynamic zoom out</Capability>
@@ -43,7 +43,7 @@
   <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
  </Channel>
  <Channel Name="Pattern Rotation 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Prism</Group>
   <Capability Min="0" Max="127">Static rotation</Capability>
   <Capability Min="128" Max="159">Dynamic 2 times forward and reverse rotation</Capability>
   <Capability Min="160" Max="191">Dynamic 1 time forward and reverse rotation</Capability>
@@ -105,14 +105,14 @@
   <Capability Min="224" Max="255">Reverse revolving rings color</Capability>
  </Channel>
  <Channel Name="Node Highlighting 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="63">Node is getting brighter and brighter</Capability>
   <Capability Min="64" Max="127">Display broken pen</Capability>
   <Capability Min="128" Max="159">Display retrace string</Capability>
   <Capability Min="224" Max="255">Reserve</Capability>
  </Channel>
  <Channel Name="Node Expansion 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255">Expansion points</Capability>
  </Channel>
  <Channel Name="Delay After Full Expansion 1">
@@ -120,7 +120,7 @@
   <Capability Min="0" Max="255">Delay after full expansion</Capability>
  </Channel>
  <Channel Name="Gradient 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
   <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
@@ -133,7 +133,7 @@
   <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
  </Channel>
  <Channel Name="Filter Selection 1">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="19">Filter 1</Capability>
   <Capability Min="20" Max="39">Filter 2</Capability>
   <Capability Min="40" Max="59">Filter 3</Capability>
@@ -153,7 +153,7 @@
   <Capability Min="0" Max="255">The second pattern switch</Capability>
  </Channel>
  <Channel Name="Out of Bounds Mode and Pattern Size 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Shutter</Group>
   <Capability Min="0" Max="249">Pattern size adjustment and Out of bounds mode</Capability>
   <Capability Min="250" Max="255">Reserve</Capability>
  </Channel>
@@ -161,11 +161,11 @@
   <Group Byte="0">Nothing</Group>
  </Channel>
  <Channel Name="Pattern Selection 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="255">Choose the second pattern</Capability>
  </Channel>
  <Channel Name="Pattern Scaling 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Prism</Group>
   <Capability Min="0" Max="127">Static pattern size</Capability>
   <Capability Min="128" Max="159">Dynamic zoom in</Capability>
   <Capability Min="160" Max="191">Dynamic zoom out</Capability>
@@ -173,7 +173,7 @@
   <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
  </Channel>
  <Channel Name="Pattern Rotation 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Prism</Group>
   <Capability Min="0" Max="127">Static rotation</Capability>
   <Capability Min="128" Max="159">Dynamic 2 times forward and reverse rotation</Capability>
   <Capability Min="160" Max="191">Dynamic 1 time forward and reverse rotation</Capability>
@@ -235,14 +235,14 @@
   <Capability Min="224" Max="255">Reverse revolving rings color</Capability>
  </Channel>
  <Channel Name="Node Highlighting 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="63">Node is getting brighter and brighter</Capability>
   <Capability Min="64" Max="127">Display broken pen</Capability>
   <Capability Min="128" Max="159">Display retrace string</Capability>
   <Capability Min="224" Max="255">Reserve</Capability>
  </Channel>
  <Channel Name="Node Expansion 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255">Expansion points</Capability>
  </Channel>
  <Channel Name="Delay After Full Expansion 2">
@@ -250,7 +250,7 @@
   <Capability Min="0" Max="255">Delay after full expansion</Capability>
  </Channel>
  <Channel Name="Gradient 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="63">Forward manual expansion</Capability>
   <Capability Min="64" Max="127">Reverse manual expansion</Capability>
   <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
@@ -263,7 +263,7 @@
   <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
  </Channel>
  <Channel Name="Filter Selection 2">
-  <Group Byte="0">Beam</Group>
+  <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="19">Filter 1</Capability>
   <Capability Min="20" Max="39">Filter 2</Capability>
   <Capability Min="40" Max="59">Filter 3</Capability>
