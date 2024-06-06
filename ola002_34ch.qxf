@@ -27,7 +27,7 @@
  <Channel Name="Effect Group Selection A">
   <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="223">Animation Gallery Switch</Capability>
-  <Capability Min="224" Max="255">Beam Gallary Switch</Capability>
+  <Capability Min="224" Max="255">Beam Gallery Switch</Capability>
  </Channel>
  <Channel Name="Pattern Selection A">
   <Group Byte="0">Gobo</Group>
@@ -152,7 +152,7 @@
  <Channel Name="Effect Group Selection B">
   <Group Byte="0">Gobo</Group>
   <Capability Min="0" Max="223">Animation Gallery Switch</Capability>
-  <Capability Min="224" Max="255">Beam Gallary Switch</Capability>
+  <Capability Min="224" Max="255">Beam Gallery Switch</Capability>
  </Channel>
  <Channel Name="Pattern Selection B">
   <Group Byte="0">Gobo</Group>
@@ -209,6 +209,23 @@
   <Capability Min="0" Max="0">Primary color</Capability>
   <Capability Min="1" Max="255">Adjust the color segmentation. The higher the value, the less the pattern segmentation</Capability>
  </Channel>
+ <Channel Name="Pattern Color B">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Primary color</Capability>
+  <Capability Min="8" Max="15" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="16" Max="23" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="24" Max="31" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="32" Max="39" Preset="ColorMacro" Res1="#4b0082">Indigo</Capability>
+  <Capability Min="40" Max="47" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="48" Max="55" Preset="ColorMacro" Res1="#ff00ff">Pink</Capability>
+  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="64" Max="95">Color change 1 effect speed selection</Capability>
+  <Capability Min="96" Max="127">Color change 2 effect speed selection</Capability>
+  <Capability Min="128" Max="159">Color change 3 effect speed selection</Capability>
+  <Capability Min="160" Max="191">Colorful color change effect speed selection</Capability>
+  <Capability Min="192" Max="223">Flow effect speed selection</Capability>
+  <Capability Min="224" Max="255">Gradient Effect Speed Selection</Capability>
+ </Channel>
  <Channel Name="Scanning Speed B">
   <Group Byte="0">Speed</Group>
   <Capability Min="0" Max="63">The scanning speed is selected from fast to slow, and the pattern lines are highlighted</Capability>
@@ -248,8 +265,26 @@
   <Channel Number="11">Pattern Color A</Channel>
   <Channel Number="12">Scanning Speed A</Channel>
   <Channel Number="13">Manual Grading A</Channel>
-  <Channel Number="14">Waves and Distortions Size A</Channel>
-  <Channel Number="15">Filter Selection A</Channel>
+  <Channel Number="14">Pattern Gradual Drawing A</Channel>
+  <Channel Number="15">Waves and Distortions Size A</Channel>
+  <Channel Number="16">Filter Selection A</Channel>
+  <Channel Number="17">Pattern Switch B</Channel>
+  <Channel Number="18">Out of Bounds Mode and Pattern Size B</Channel>
+  <Channel Number="19">Effect Group Selection B</Channel>
+  <Channel Number="20">Pattern Selection B</Channel>
+  <Channel Number="21">Pattern Scaling B</Channel>
+  <Channel Number="22">Pattern Rotation B</Channel>
+  <Channel Number="23">Horizontal Positioning B</Channel>
+  <Channel Number="24">Vertical Positioning B</Channel>
+  <Channel Number="25">Horizontal Flip and Twist B</Channel>
+  <Channel Number="26">Vertical Flip and Twist B</Channel>
+  <Channel Number="27">Pattern Color Segmentation B</Channel>
+  <Channel Number="28">Pattern Color B</Channel>
+  <Channel Number="29">Scanning Speed B</Channel>
+  <Channel Number="30">Manual Grading B</Channel>
+  <Channel Number="31">Pattern Gradual Drawing B</Channel>
+  <Channel Number="32">Waves and Distortions Size B</Channel>
+  <Channel Number="33">Filter Selection B</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
