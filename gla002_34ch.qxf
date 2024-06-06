@@ -266,6 +266,13 @@
   <Capability Min="220" Max="239">Filter 12</Capability>
   <Capability Min="240" Max="255">Filter 13</Capability>
  </Channel>
+ <Channel Name="Total Switch A 1">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">Light off</Capability>
+  <Capability Min="1" Max="99">Auto mode</Capability>
+  <Capability Min="100" Max="254">Sound mode</Capability>
+  <Capability Min="255" Max="255">Light off</Capability>
+ </Channel>
  <Mode Name="34CH">
   <Channel Number="0">Total Switch A</Channel>
   <Channel Number="1">Out of Bounds Mode and Pattern Size A</Channel>
