@@ -3,7 +3,7 @@
 qlcplus fixtures for:
 
 - Gruolin GL-A001 laser, also appears to be sold as Olaalite OL-A001
-- Gruolin GL-A002 laser, which may be the same as Olaalite OL-A002 
+- Gruolin GL-A02 laser, which may be the same as Olaalite OL-A002 
 
 Currently, only 34-channel (advanced) mode is implemented.
 
@@ -21,7 +21,7 @@ The laser basically allows two (almost) independent images to be projected.
 
 https://www.amazon.com/Gruolin-Animation-Activated-Perefct-Lighting/dp/B09ZY8Z96T/
 
-### User Manual PDF
+#### User Manual PDF
 
 - from Amazon: https://m.media-amazon.com/images/I/B1WQMfSwivL.pdf
 - copy: TODO
