@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>Sergey Butylkov</Author>
+ </Creator>
+ <Manufacturer>Gruolin / Olaalite</Manufacturer>
+ <Model>GL-A002: 34 channel mode</Model>
+ <Type>Laser</Type>
+ <Channel Name="Total Switch A">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">Light off</Capability>
+  <Capability Min="1" Max="99">Auto mode</Capability>
+  <Capability Min="100" Max="254">Sound mode</Capability>
+  <Capability Min="255" Max="255">Light off</Capability>
+ </Channel>
+ <Channel Name="Out of Bounds Mode and Pattern Size A">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="49">The pattern goes out of bounds and disappears, while the pattern changes from large to small</Capability>
+  <Capability Min="50" Max="99">The pattern breaks out and folds back, thile the pattern changes from small to large</Capability>
+  <Capability Min="100" Max="149">The pattern is folded out of bounds, while the pattern changes from large to small</Capability>
+  <Capability Min="150" Max="199">The pattern cross the boundary, whole the pattern changes from large to small</Capability>
+  <Capability Min="200" Max="255">The pattern is out of bounds and hidden. At the same time, the pattern remains unchanged</Capability>
+ </Channel>
+ <Channel Name="Effect Group Selection A">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="223">Animation Gallery Switch</Capability>
+  <Capability Min="224" Max="255">Beam Gallary Switch</Capability>
+ </Channel>
+ <Channel Name="Pattern Selection A">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="255">Geometric Pattern Selection or Animation Pattern Selection</Capability>
+ </Channel>
+ <Channel Name="Pattern Scaling A">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Pattern size selection</Capability>
+  <Capability Min="128" Max="159">Zoom in speed selection</Capability>
+  <Capability Min="160" Max="191">Reduce speed selection</Capability>
+  <Capability Min="192" Max="223">Zoom 1 speed selection</Capability>
+  <Capability Min="224" Max="255">Zoom 2 speed selection</Capability>
+ </Channel>
+ <Channel Name="Pattern Rotation A">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Rotation angle selection</Capability>
+  <Capability Min="128" Max="191">Rotation reverse speed selection</Capability>
+  <Capability Min="192" Max="255">Positive phase rotation speed selection</Capability>
+ </Channel>
+ <Channel Name="Horizontal Placement A">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="1" Max="127">Horizontal Position Selection</Capability>
+  <Capability Min="128" Max="159">Horizontal Wave 1 Speed Selection</Capability>
+  <Capability Min="160" Max="191">Horizontal Wave 2 Speed Selection</Capability>
+  <Capability Min="192" Max="223">Horizontal movement 1 speed selection</Capability>
+  <Capability Min="224" Max="255">Horizontal movement 2 speed selection</Capability>
+ </Channel>
+ <Channel Name="Vertical Placement A">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="1" Max="127">Vertical Position Selection</Capability>
+  <Capability Min="128" Max="159">Vertical Wave 1 Speed Selection</Capability>
+  <Capability Min="160" Max="191">Vertical Wave 2 Speed Selection</Capability>
+  <Capability Min="192" Max="223">Vertical movement 1 speed selection</Capability>
+  <Capability Min="224" Max="255">Vertical movement 2 speed selection</Capability>
+ </Channel>
+ <Channel Name="Horizontal Scale A">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="1" Max="127">Horizontal flip position selection</Capability>
+  <Capability Min="128" Max="159">Horizontal Twist 1 Speed Selection</Capability>
+  <Capability Min="160" Max="191">Horizontal Twist 2 Speed Selection</Capability>
+  <Capability Min="192" Max="223">Horizontal Flip 1 Speed Selection</Capability>
+  <Capability Min="224" Max="255">Horizontal Flip 2 Speed Selection</Capability>
+ </Channel>
+ <Channel Name="Vertical Scale A">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="1" Max="127">Vertical flip position selection</Capability>
+  <Capability Min="128" Max="159">Vertical Twist 1 Speed Selection</Capability>
+  <Capability Min="160" Max="191">Vertical Twist 2 Speed Selection</Capability>
+  <Capability Min="192" Max="223">Vertical Flip 1 Speed Selection</Capability>
+  <Capability Min="224" Max="255">Vertical Flip 2 Speed Selection</Capability>
+ </Channel>
+ <Channel Name="Pattern Color Segmentation A">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="0">Primary color</Capability>
+  <Capability Min="1" Max="255">Adjust the color segmentation. The higher the value, the less the pattern segmentation</Capability>
+ </Channel>
+ <Channel Name="Pattern Color A">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Primary color</Capability>
+  <Capability Min="8" Max="15" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="16" Max="23" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="24" Max="31" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="32" Max="39" Preset="ColorMacro" Res1="#4b0082">Indigo</Capability>
+  <Capability Min="40" Max="47" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="48" Max="55" Preset="ColorMacro" Res1="#ff00ff">Pink</Capability>
+  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="64" Max="95">Color change 1 effect speed selection</Capability>
+  <Capability Min="96" Max="127">Color change 2 effect speed selection</Capability>
+  <Capability Min="128" Max="159">Color change 3 effect speed selection</Capability>
+  <Capability Min="160" Max="191">Colorful color change effect speed selection</Capability>
+  <Capability Min="192" Max="223">Flow effect speed selection</Capability>
+  <Capability Min="224" Max="255">Gradient Effect Speed Selection</Capability>
+ </Channel>
+ <Channel Name="Scanning Speed A">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="63">The scanning speed is selected from fast to slow, and the pattern lines are highlighted</Capability>
+  <Capability Min="64" Max="127">The scanning speed is selected from fast to slow, with pattern lines display points and echo line 1</Capability>
+  <Capability Min="128" Max="191">The scanning speed is selected from fast to slow, with pattern lines displaying dots and echo line 1</Capability>
+  <Capability Min="192" Max="255">Scan speed selection from fast to slow, pattern dotting</Capability>
+ </Channel>
+ <Channel Name="Manual Grading A">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Manually draw the pattern gradually, and the light will turn off at 255</Capability>
+ </Channel>
+ <Channel Name="Pattern Gradual Drawing A">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="1" Max="255">Gradient speed selection (Use with Manual Grading)</Capability>
+ </Channel>
+ <Channel Name="Waves and Distortions Size A">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Choose wave size and twist size. Use in conjunction with Horizontal/Vertical Wave 1/2 Speed Selection</Capability>
+ </Channel>
+ <Channel Name="Degree Of Distortion 1">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
+ </Channel>
+ <Channel Name="Filter Selection 1">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="19">Filter 1</Capability>
+  <Capability Min="20" Max="39">Filter 2</Capability>
+  <Capability Min="40" Max="59">Filter 3</Capability>
+  <Capability Min="60" Max="79">Filter 4</Capability>
+  <Capability Min="80" Max="99">Filter 5</Capability>
+  <Capability Min="100" Max="119">Filter 6</Capability>
+  <Capability Min="120" Max="139">Filter 7</Capability>
+  <Capability Min="140" Max="159">Filter 8</Capability>
+  <Capability Min="160" Max="179">Filter 9</Capability>
+  <Capability Min="180" Max="199">Filter 10</Capability>
+  <Capability Min="200" Max="219">Filter 11</Capability>
+  <Capability Min="220" Max="239">Filter 12</Capability>
+  <Capability Min="240" Max="255">Filter 13</Capability>
+ </Channel>
+ <Channel Name="Pattern Switch 2">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255">The second pattern switch</Capability>
+ </Channel>
+ <Channel Name="Out of Bounds Mode and Pattern Size 2">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="249">Pattern size adjustment and Out of bounds mode</Capability>
+  <Capability Min="250" Max="255">Reserve</Capability>
+ </Channel>
+ <Channel Name="No Function 2">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="Pattern Selection 2">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="255">Choose the second pattern</Capability>
+ </Channel>
+ <Channel Name="Pattern Scaling 2">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Static pattern size</Capability>
+  <Capability Min="128" Max="159">Dynamic zoom in</Capability>
+  <Capability Min="160" Max="191">Dynamic zoom out</Capability>
+  <Capability Min="192" Max="223">Dynamic scaling</Capability>
+  <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
+ </Channel>
+ <Channel Name="Pattern Rotation 2">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Static rotation</Capability>
+  <Capability Min="128" Max="159">Dynamic 2 times forward and reverse rotation</Capability>
+  <Capability Min="160" Max="191">Dynamic 1 time forward and reverse rotation</Capability>
+  <Capability Min="192" Max="223">Dynamic forward rotation</Capability>
+  <Capability Min="224" Max="255">Dynamic reverse rotation</Capability>
+ </Channel>
+ <Channel Name="Horizontal Movement 2">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="127">Static translation</Capability>
+  <Capability Min="128" Max="159">Dynamic push-up waves</Capability>
+  <Capability Min="160" Max="191">Dynamic push-down waves</Capability>
+  <Capability Min="192" Max="223">Dynamic left shift</Capability>
+  <Capability Min="224" Max="255">Dynamic right shift</Capability>
+ </Channel>
+ <Channel Name="Vertical Movement 2">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="127">Static vertical shift</Capability>
+  <Capability Min="128" Max="159">Dynamic right push waves</Capability>
+  <Capability Min="160" Max="191">Dynamic left push waves</Capability>
+  <Capability Min="192" Max="223">Dynamic move down</Capability>
+  <Capability Min="224" Max="255">Dynamic move up</Capability>
+ </Channel>
+ <Channel Name="Horizontal Zoom 2">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="127">Static size</Capability>
+  <Capability Min="128" Max="159">Dynamic push up distortion</Capability>
+  <Capability Min="160" Max="191">Dynamic push down distortion</Capability>
+  <Capability Min="192" Max="223">Dynamic scaling</Capability>
+  <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
+ </Channel>
+ <Channel Name="Vertical Zoom 2">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="127">Static size</Capability>
+  <Capability Min="128" Max="159">Dynamic right push distortion</Capability>
+  <Capability Min="160" Max="191">Dynamic left push distortion</Capability>
+  <Capability Min="192" Max="223">Dynamic scaling</Capability>
+  <Capability Min="224" Max="255">Dynamic flip scaling</Capability>
+ </Channel>
+ <Channel Name="Force Tinting 2">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="0">Primary color</Capability>
+  <Capability Min="1" Max="255">Change a color every point</Capability>
+ </Channel>
+ <Channel Name="Color Change 2">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">Primary color</Capability>
+  <Capability Min="8" Max="15" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="16" Max="23" Preset="ColorMacro" Res1="#ffff00">Yellow</Capability>
+  <Capability Min="24" Max="31" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="32" Max="39" Preset="ColorMacro" Res1="#4b0082">Indigo</Capability>
+  <Capability Min="40" Max="47" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="48" Max="55" Preset="ColorMacro" Res1="#ff00ff">Pink</Capability>
+  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="64" Max="95">Reg, green, and blue color change of the whole picture</Capability>
+  <Capability Min="96" Max="127">Yellow, indigo and pink color change of the whole picture</Capability>
+  <Capability Min="128" Max="159">Colorful color change of the whole picture</Capability>
+  <Capability Min="160" Max="191">Colorful color change</Capability>
+  <Capability Min="192" Max="223">Revolving horses color</Capability>
+  <Capability Min="224" Max="255">Reverse revolving rings color</Capability>
+ </Channel>
+ <Channel Name="Node Highlighting 2">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="63">Node is getting brighter and brighter</Capability>
+  <Capability Min="64" Max="127">Display broken pen</Capability>
+  <Capability Min="128" Max="159">Display retrace string</Capability>
+  <Capability Min="224" Max="255">Reserve</Capability>
+ </Channel>
+ <Channel Name="Node Expansion 2">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Expansion points</Capability>
+ </Channel>
+ <Channel Name="Delay After Full Expansion 2">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Delay after full expansion</Capability>
+ </Channel>
+ <Channel Name="Gradient 2">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="63">Forward manual expansion</Capability>
+  <Capability Min="64" Max="127">Reverse manual expansion</Capability>
+  <Capability Min="128" Max="159">Dynamic gradient effect A</Capability>
+  <Capability Min="160" Max="191">Dynamic gradient effect B</Capability>
+  <Capability Min="192" Max="223">Dynamic fade effect C</Capability>
+  <Capability Min="224" Max="255">Dynamic fade effect D</Capability>
+ </Channel>
+ <Channel Name="Degree Of Distortion 2">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
+ </Channel>
+ <Channel Name="Filter Selection 2">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="19">Filter 1</Capability>
+  <Capability Min="20" Max="39">Filter 2</Capability>
+  <Capability Min="40" Max="59">Filter 3</Capability>
+  <Capability Min="60" Max="79">Filter 4</Capability>
+  <Capability Min="80" Max="99">Filter 5</Capability>
+  <Capability Min="100" Max="119">Filter 6</Capability>
+  <Capability Min="120" Max="139">Filter 7</Capability>
+  <Capability Min="140" Max="159">Filter 8</Capability>
+  <Capability Min="160" Max="179">Filter 9</Capability>
+  <Capability Min="180" Max="199">Filter 10</Capability>
+  <Capability Min="200" Max="219">Filter 11</Capability>
+  <Capability Min="220" Max="239">Filter 12</Capability>
+  <Capability Min="240" Max="255">Filter 13</Capability>
+ </Channel>
+ <Mode Name="34CH">
+  <Channel Number="0">Total Switch A</Channel>
+  <Channel Number="1">Out of Bounds Mode and Pattern Size A</Channel>
+  <Channel Number="2">Effect Group Selection A</Channel>
+  <Channel Number="3">Pattern Selection A</Channel>
+  <Channel Number="4">Pattern Scaling A</Channel>
+  <Channel Number="5">Pattern Rotation A</Channel>
+  <Channel Number="6">Horizontal Placement A</Channel>
+  <Channel Number="7">Vertical Placement A</Channel>
+  <Channel Number="8">Horizontal Scale A</Channel>
+  <Channel Number="9">Vertical Scale A</Channel>
+  <Channel Number="10">Pattern Color Segmentation A</Channel>
+  <Channel Number="11">Pattern Color A</Channel>
+  <Channel Number="12">Scanning Speed A</Channel>
+  <Channel Number="13">Manual Grading A</Channel>
+  <Channel Number="14">Waves and Distortions Size A</Channel>
+  <Channel Number="15">Degree Of Distortion 1</Channel>
+  <Channel Number="16">Filter Selection 1</Channel>
+  <Channel Number="17">Pattern Switch 2</Channel>
+  <Channel Number="18">Out of Bounds Mode and Pattern Size 2</Channel>
+  <Channel Number="19">No Function 2</Channel>
+  <Channel Number="20">Pattern Selection 2</Channel>
+  <Channel Number="21">Pattern Scaling 2</Channel>
+  <Channel Number="22">Pattern Rotation 2</Channel>
+  <Channel Number="23">Horizontal Movement 2</Channel>
+  <Channel Number="24">Vertical Movement 2</Channel>
+  <Channel Number="25">Horizontal Zoom 2</Channel>
+  <Channel Number="26">Vertical Zoom 2</Channel>
+  <Channel Number="27">Force Tinting 2</Channel>
+  <Channel Number="28">Color Change 2</Channel>
+  <Channel Number="29">Node Highlighting 2</Channel>
+  <Channel Number="30">Node Expansion 2</Channel>
+  <Channel Number="31">Gradient 2</Channel>
+  <Channel Number="32">Degree Of Distortion 2</Channel>
+  <Channel Number="33">Filter Selection 2</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="1.56" Width="162" Height="80" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="30" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
