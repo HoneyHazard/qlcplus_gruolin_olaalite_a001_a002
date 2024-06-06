@@ -11,6 +11,10 @@ Currently, only 34-channel (advanced/customizable) modes are available here.
 
 5/6-channel, simplified modes should also be added.
 
+> **If your laser blows up, your computer blows up, all your raspberri pies blow up and all your free time blows up and everything on this planet blows up due to my fixture mappings = not my fault, thank you. But hopefully they will not.**
+
+> **As always, when playing with lasers, even not insanly powerful ones, DON'T BE STUPID. Research safety if not sure. Thank you.**
+
 🚧 *WORK IN PROGRESS* 🚧
 
 ## Lasers Info
@@ -50,7 +54,7 @@ The DMX addresses and channels are a little different:
 - 5CH Simple Line & Annimation Pattern at DMX address `J.001` (not implemented here yet)
 - 34CH Proffessional Line & Animation Pattern at DMX address `D.001`
 
- I expect everything or almost everything to work with the fixture mapping for Gruolin GL-A001. If somebody wants to test drive this laser with my mapping for GL-A001 or dive into the user manual to pick out all the differences in DMX values by all means!
+ 34CH mapping goes, I expect everything or almost everything to work with the fixture mapping for Gruolin GL-A001. If somebody wants to test drive OL-A001 with my mapping for GL-A001 or dive into the user manuals to pick out all the differences in what DMX values do - by all means! Share your findings! I can't do it at the moment.
 
 #### Amazon Product Page
 
