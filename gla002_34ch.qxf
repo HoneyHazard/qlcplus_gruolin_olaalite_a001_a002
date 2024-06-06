@@ -47,7 +47,7 @@
   <Capability Min="128" Max="191">Rotation reverse speed selection</Capability>
   <Capability Min="192" Max="255">Positive phase rotation speed selection</Capability>
  </Channel>
- <Channel Name="Horizontal Placement A">
+ <Channel Name="Horizontal Positioning A">
   <Group Byte="0">Pan</Group>
   <Capability Min="1" Max="127">Horizontal Position Selection</Capability>
   <Capability Min="128" Max="159">Horizontal Wave 1 Speed Selection</Capability>
@@ -55,7 +55,7 @@
   <Capability Min="192" Max="223">Horizontal movement 1 speed selection</Capability>
   <Capability Min="224" Max="255">Horizontal movement 2 speed selection</Capability>
  </Channel>
- <Channel Name="Vertical Placement A">
+ <Channel Name="Vertical Positioning A">
   <Group Byte="0">Tilt</Group>
   <Capability Min="1" Max="127">Vertical Position Selection</Capability>
   <Capability Min="128" Max="159">Vertical Wave 1 Speed Selection</Capability>
@@ -63,7 +63,7 @@
   <Capability Min="192" Max="223">Vertical movement 1 speed selection</Capability>
   <Capability Min="224" Max="255">Vertical movement 2 speed selection</Capability>
  </Channel>
- <Channel Name="Horizontal Scale A">
+ <Channel Name="Horizontal Scaling A">
   <Group Byte="0">Beam</Group>
   <Capability Min="1" Max="127">Horizontal flip position selection</Capability>
   <Capability Min="128" Max="159">Horizontal Twist 1 Speed Selection</Capability>
@@ -71,7 +71,7 @@
   <Capability Min="192" Max="223">Horizontal Flip 1 Speed Selection</Capability>
   <Capability Min="224" Max="255">Horizontal Flip 2 Speed Selection</Capability>
  </Channel>
- <Channel Name="Vertical Scale A">
+ <Channel Name="Vertical Scaling A">
   <Group Byte="0">Beam</Group>
   <Capability Min="1" Max="127">Vertical flip position selection</Capability>
   <Capability Min="128" Max="159">Vertical Twist 1 Speed Selection</Capability>
@@ -120,11 +120,7 @@
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255">Choose wave size and twist size. Use in conjunction with Horizontal/Vertical Wave 1/2 Speed Selection</Capability>
  </Channel>
- <Channel Name="Degree Of Distortion 1">
-  <Group Byte="0">Beam</Group>
-  <Capability Min="0" Max="255">Adjust the degree of distortion of various distortion effects</Capability>
- </Channel>
- <Channel Name="Filter Selection 1">
+ <Channel Name="Filter Selection A">
   <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="19">Filter 1</Capability>
   <Capability Min="20" Max="39">Filter 2</Capability>
@@ -277,34 +273,33 @@
   <Channel Number="3">Pattern Selection A</Channel>
   <Channel Number="4">Pattern Scaling A</Channel>
   <Channel Number="5">Pattern Rotation A</Channel>
-  <Channel Number="6">Horizontal Placement A</Channel>
-  <Channel Number="7">Vertical Placement A</Channel>
-  <Channel Number="8">Horizontal Scale A</Channel>
-  <Channel Number="9">Vertical Scale A</Channel>
+  <Channel Number="6">Horizontal Positioning A</Channel>
+  <Channel Number="7">Vertical Positioning A</Channel>
+  <Channel Number="8">Horizontal Scaling A</Channel>
+  <Channel Number="9">Vertical Scaling A</Channel>
   <Channel Number="10">Pattern Color Segmentation A</Channel>
   <Channel Number="11">Pattern Color A</Channel>
   <Channel Number="12">Scanning Speed A</Channel>
   <Channel Number="13">Manual Grading A</Channel>
   <Channel Number="14">Waves and Distortions Size A</Channel>
-  <Channel Number="15">Degree Of Distortion 1</Channel>
-  <Channel Number="16">Filter Selection 1</Channel>
-  <Channel Number="17">Pattern Switch 2</Channel>
-  <Channel Number="18">Out of Bounds Mode and Pattern Size 2</Channel>
-  <Channel Number="19">No Function 2</Channel>
-  <Channel Number="20">Pattern Selection 2</Channel>
-  <Channel Number="21">Pattern Scaling 2</Channel>
-  <Channel Number="22">Pattern Rotation 2</Channel>
-  <Channel Number="23">Horizontal Movement 2</Channel>
-  <Channel Number="24">Vertical Movement 2</Channel>
-  <Channel Number="25">Horizontal Zoom 2</Channel>
-  <Channel Number="26">Vertical Zoom 2</Channel>
-  <Channel Number="27">Force Tinting 2</Channel>
-  <Channel Number="28">Color Change 2</Channel>
-  <Channel Number="29">Node Highlighting 2</Channel>
-  <Channel Number="30">Node Expansion 2</Channel>
-  <Channel Number="31">Gradient 2</Channel>
-  <Channel Number="32">Degree Of Distortion 2</Channel>
-  <Channel Number="33">Filter Selection 2</Channel>
+  <Channel Number="15">Filter Selection A</Channel>
+  <Channel Number="16">Pattern Switch 2</Channel>
+  <Channel Number="17">Out of Bounds Mode and Pattern Size 2</Channel>
+  <Channel Number="18">No Function 2</Channel>
+  <Channel Number="19">Pattern Selection 2</Channel>
+  <Channel Number="20">Pattern Scaling 2</Channel>
+  <Channel Number="21">Pattern Rotation 2</Channel>
+  <Channel Number="22">Horizontal Movement 2</Channel>
+  <Channel Number="23">Vertical Movement 2</Channel>
+  <Channel Number="24">Horizontal Zoom 2</Channel>
+  <Channel Number="25">Vertical Zoom 2</Channel>
+  <Channel Number="26">Force Tinting 2</Channel>
+  <Channel Number="27">Color Change 2</Channel>
+  <Channel Number="28">Node Highlighting 2</Channel>
+  <Channel Number="29">Node Expansion 2</Channel>
+  <Channel Number="30">Gradient 2</Channel>
+  <Channel Number="31">Degree Of Distortion 2</Channel>
+  <Channel Number="32">Filter Selection 2</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
