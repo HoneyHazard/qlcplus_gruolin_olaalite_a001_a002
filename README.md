@@ -1,6 +1,9 @@
-# qlcplus_gruolin_gl-a001
+# About
 
-qlcplus fixture for Gruolin GL-A001 laser
+qlcplus fixtures for:
+
+- Gruolin GL-A001 laser, also appears to be sold as Olaalite OL-A001
+- Gruolin GL-A002 laser, which may be the same as Olaalite OL-A002 
 
 Currently, only 34-channel (advanced) mode is implemented.
 
@@ -8,31 +11,64 @@ Currently, only 34-channel (advanced) mode is implemented.
 
 🚧 *WORK IN PROGRESS* 🚧
 
-## About the Laser
+## Lasers Info
+
+### Gruolin GL-A001
 
 The laser basically allows two (almost) independent images to be projected.
 
-### Amazon Link
+#### Amazon Product Page
 
 https://www.amazon.com/Gruolin-Animation-Activated-Perefct-Lighting/dp/B09ZY8Z96T/
 
-### Review
+### User Manual PDF
+
+- from Amazon: https://m.media-amazon.com/images/I/B1WQMfSwivL.pdf
+- copy: TODO
+
+#### Review
 
 https://happytechfam.online/gruolin-3d-animation-dj-party-laser-light-full-color-review/
 
-### Youtube
+#### Youtube
 
 https://www.youtube.com/watch?v=fdpWfh7IOrY
 
-### User Manual PDF
+### Olaalite OL-A001
 
-https://m.media-amazon.com/images/I/B1WQMfSwivL.pdf
+Either same people/company under a different name or some kind of clone of Gruolin GL-A001
+
+#### Amazon Product Page
+
+https://www.amazon.com/gp/product/B0B36G4TRN
+
+#### User Manual PDF
+
+- from Amazon: https://m.media-amazon.com/images/I/91kl4jcOB1L.pdf
+- copy: TODO
+
+#### Gruolin GL-A02 / Olaalite OL-A002
+
+This upgrade appears to:
+- allow independent gallery and line/beam mode for the second pattern
+- rated 30w instead of 20w
+- likely rearranges how some parameters and effects work
+
+#### Amazon Product Page
+
+https://www.amazon.com/gp/product/B0CCMM8BHJ/
+
+Amazon product page presents the laser as Gruolin GL-A02, but the purchased laser arrives branded as Olaalite OL-A002
+
+#### User Manual
+
+- copy: todo
 
 ## Installation
 
-### Linux (Fedora 40)
+### Linux (Tested on Fedora 40)
 
-Copy `gla001.qxf` to (or add a soft-link to `qgla001.qxf` at):
+Copy `gla001.qxf` and/or `gla002.qxf` (or add soft-link(s) to be accessible at):
 
 User library: **`~/.qlcplus/fixtures`**
 
@@ -40,7 +76,7 @@ User library: **`~/.qlcplus/fixtures`**
 
 ### Windows
 
-Copy `gla001.qxf` to :
+Copy `gla001.qxf` and/or `gla002.qxf` to:
 
 `C:\Users\[user name]\QLC+\fixtures`
 
@@ -48,7 +84,7 @@ Copy `gla001.qxf` to :
 
 ### OSX
 
-Copy `gla001.qxf` to:
+Copy `gla001.qxf` and/or `gla002.qxf` to:
 
 `~/Library/Application Support/QLC+/fixtures`
 
@@ -61,12 +97,6 @@ Copy `gla001.qxf` to:
 | ![github_screenshot_2](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/4f0aaa16-32f7-403e-adbe-213d205f4b83) | ![github_screenshot_1](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/f064c725-77aa-4f4e-862f-7c0550022cae) <br /> ![github_screenshot_0](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/ead0f690-793c-49d7-90c1-49dae3029874) |
 
 
-# Further Plans
+# TODO and Further Plans
 
-6CH simplified mode should implemented.
-
-Then, if further polished, this could be uplodaded/converted to become part of Open Fixture Library:
-
-https://open-fixture-library.org/fixture-editor
-
-Or be included with QLC+ main codebase? The laser is a fun one.
+Read [[TODO.md]]
