@@ -13,7 +13,7 @@ Currently, only 34-channel (advanced/customizable) modes are available here.
 
 > **If your laser blows up, your computer blows up, all your raspberri pies blow up and all your free time blows up and everything on this planet blows up due to my fixture mappings = not my fault, thank you. But hopefully they will not.**
 
-> **As always, when playing with lasers, even not insanly powerful ones, DON'T BE STUPID. Research safety if not sure. Thank you.**
+> **As always, when playing with lasers, even not insanly powerful ones, DON'T BE STUPID. Research safety. Thank you.**
 
 🚧 *WORK IN PROGRESS* 🚧
 
@@ -54,7 +54,7 @@ The DMX addresses and channels are a little different:
 - 5CH Simple Line & Annimation Pattern at DMX address `J.001` (not implemented here yet)
 - 34CH Proffessional Line & Animation Pattern at DMX address `D.001`
 
- 34CH mapping goes, I expect everything or almost everything to work with the fixture mapping for Gruolin GL-A001. If somebody wants to test drive OL-A001 with my mapping for GL-A001 or dive into the user manuals to pick out all the differences in what DMX values do - by all means! Share your findings! I can't do it at the moment.
+34CH mapping goes, I expect everything or almost everything to work with the fixture mapping for Gruolin GL-A001. If somebody wants to test drive OL-A001 with my mapping for GL-A001 or dive into the user manuals to pick out all the differences in what DMX values do - by all means! Share your findings! I can't do it at the moment.
 
 #### Amazon Product Page
 
@@ -70,6 +70,7 @@ https://www.amazon.com/gp/product/B0B36G4TRN
 I purchased this as a Gruolin product, which shows GL-A02 in product images on Amazon. However, the laser that arrived is clearly labeled as Olaalite OL-A002. Thus, you may not be able to purchase Gruolin GL-A02 as such.
 
 This upgrade appears to:
+
 - allow independent gallery and line/beam mode for the second pattern
 - rated 30w instead of 20w
 - likely rearranges how some parameters and effects work
@@ -78,7 +79,6 @@ DMX addresses:
 
 - 6CH Simple Line & Annimation Pattern at DMX address `E.001` (not implemented here yet)
 - 34CH Proffessional Line & Animation Pattern at DMX address `D.001`
-
 
 #### Amazon Product Page
 
@@ -124,10 +124,10 @@ Copy `gla001_34ch.qxf` and/or `ola002_34ch.qxf` to:
 
 ## Screenshots
 
-|   |   |
-| - | - |
-| ![github_screenshot_2](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/4f0aaa16-32f7-403e-adbe-213d205f4b83) | ![github_screenshot_1](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/f064c725-77aa-4f4e-862f-7c0550022cae) <br /> ![github_screenshot_0](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/ead0f690-793c-49d7-90c1-49dae3029874) |
 
+|                                                                                                                                    |                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![github_screenshot_2](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/4f0aaa16-32f7-403e-adbe-213d205f4b83) | ![github_screenshot_1](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/f064c725-77aa-4f4e-862f-7c0550022cae) <br /> ![github_screenshot_0](https://github.com/HoneyHazard/qlcplus_gruolin_gl-a001/assets/8847050/ead0f690-793c-49d7-90c1-49dae3029874) |
 
 # TODO and Further Plans
 
