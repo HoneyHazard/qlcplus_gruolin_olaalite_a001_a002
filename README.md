@@ -47,7 +47,7 @@ https://www.amazon.com/gp/product/B0B36G4TRN
 - from Amazon: https://m.media-amazon.com/images/I/91kl4jcOB1L.pdf
 - copy: TODO
 
-#### Gruolin GL-A02 / Olaalite OL-A002
+### Gruolin GL-A02 / Olaalite OL-A002
 
 This upgrade appears to:
 - allow independent gallery and line/beam mode for the second pattern
@@ -65,6 +65,10 @@ Amazon product page presents the laser as Gruolin GL-A02, but the purchased lase
 - copy: todo
 
 ## Installation
+
+Gruolin GL-A001 or Olaalite OL-A001? => use `gla001.qxf`
+
+Gruolin GL-A02 or Olaalite OL-A002? => use `gla002.qxf`
 
 ### Linux (Tested on Fedora 40)
 
